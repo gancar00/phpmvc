@@ -1,5 +1,5 @@
 # phpmvc 
-database sql name phpmvc table mahasiswa(id,nama,nim,email,jurusan)
+DBMS mysql name phpmvc table mahasiswa(id,nama,nim,email,jurusan)
 
 prototype mvc pure PHP
 -fitur
