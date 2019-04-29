@@ -6,14 +6,32 @@
         </div>
     </div>
 
-    <div class="row">
-      <div class="col-6">
-                <!-- Button trigger modal -->
+    <div class="row mb-3">
+        <div class="col-lg-6">
+              <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary tombolTambahData" data-toggle="modal" data-target="#formModal">
             Tambah Mahasiswa
           </button>
-          <br><br>
-        <h3>Daftar Mahasiswa</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+         <form action="<?= BASEURL; ?>/mahasiswa/cari" method="post">
+              <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Cari mahasiswa....." name="keyword" id="keyword" autocomplete="off">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="submit" id="cari">Cari</button>
+              </div>
+            </div>
+         </form>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6">
+        
+          <h3>Daftar Mahasiswa</h3>
 
           <ul class="list-group">
               <?php foreach($data['mhs'] as $mhs ) : ?>
